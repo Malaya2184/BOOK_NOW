@@ -26,7 +26,22 @@ body {
   background-color: var(--pink-light); }
 
 .main_container {
-  margin: 3rem;
-  padding: 2rem;
-  height: 100rem;
+  min-height: 100rem;
+  min-width: 120rem;
   background-color: var(--grey-light-1); }
+
+.header {
+  height: 7rem;
+  background-color: #f8faf8; }
+
+.total_content {
+  height: 50rem;
+  display: flex;
+  background-color: mediumaquamarine; }
+
+.menu_bar {
+  height: 5rem;
+  background-color: pink; }
+
+.main_content {
+  height: 5rem; }
