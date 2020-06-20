@@ -1,3 +1,25 @@
+:root {
+  --pink-light: rgb(202, 63, 98);
+  --pink-dark: rgb(238, 16, 72);
+  --grey-light-1: rgb(197, 193, 193);
+  --grey-light-2: rgb(139, 138, 138);
+  --grey-dark-1: rgb(121, 118, 119);
+  --grey-dark-2: rgb(87, 83, 84); }
+
 * {
-  font-size: 50px;
-  background-color: #a1e7a1; }
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'open sans', sans-serif;
+  font-weight: normal;
+  background-color: var(--pink-dark); }
