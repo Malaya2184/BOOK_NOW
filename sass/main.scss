@@ -2,7 +2,7 @@
 {
     --pink-light: rgb(202, 63, 98);
     --pink-dark: rgb(238, 16, 72);
-    --grey-light-1: rgb(197, 193, 193);
+    --grey-light-1: rgb(240, 238, 238);
     --grey-light-2: rgb(139, 138, 138);
     --grey-dark-1: rgb(121, 118, 119);
     --grey-dark-2: rgb(87, 83, 84);
@@ -24,7 +24,30 @@ html{
 body{
     font-family: 'open sans', sans-serif;
     font-weight: normal;
-    background-color: var(--pink-dark);
-     
+    font-size: 1.5rem;
+    background-color: var(--pink-light);
+}
+.main_container
+{
+    margin: 3rem;
+    padding: 2rem;
+    height: 100rem;
+    background-color: var(--grey-light-1);
+
+}
+.header
+{
+
+}
+.total_content
+{
+
+}
+.menu_bar
+{
+
+}
+.main_content
+{
 
 }
