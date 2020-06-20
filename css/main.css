@@ -35,13 +35,12 @@ body {
   background-color: #f8faf8; }
 
 .total_content {
-  height: 50rem;
+  height: 100rem;
   display: flex;
   background-color: mediumaquamarine; }
 
 .menu_bar {
-  height: 5rem;
   background-color: pink; }
 
 .main_content {
-  height: 5rem; }
+  background-color: lightsalmon; }
