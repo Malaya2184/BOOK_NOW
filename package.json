@@ -4,7 +4,7 @@
   "description": "In this project we are building website design (front-end) through which you can book hotel, flight, tour ... etc.(using html and sass)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/Malaya2184/BOOK_NOW/issues"
   },
-  "homepage": "https://github.com/Malaya2184/BOOK_NOW#readme",
+  "homepage": "https://github.com/Malaya2184/BOOK_NOW/home.html",
   "devDependencies": {
     "node-sass": "^4.14.1"
   }
