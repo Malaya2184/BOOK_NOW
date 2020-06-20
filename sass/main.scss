@@ -41,16 +41,16 @@ body{
 }
 .total_content
 {
-    height: 100rem;
 display: flex;
 background-color: mediumaquamarine;
 }
 .menu_bar
 {
 background-color: pink;
+flex: 0 0 18%;
 }
 .main_content
 {
 background-color: lightsalmon;
-
+flex: 1;
 }
