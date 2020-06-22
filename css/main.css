@@ -26,13 +26,18 @@ body {
   background-color: var(--pink-light); }
 
 .main_container {
+  margin: none;
   min-height: 100rem;
-  min-width: 120rem;
+  max-width: 1000rem;
   background-color: var(--grey-light-1); }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
-  background-color: #f8faf8; }
+  background-color: #f8faf8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .total_content {
   display: flex;
@@ -45,3 +50,49 @@ body {
 .main_content {
   background-color: lightsalmon;
   flex: 1; }
+
+.logo {
+  height: 3.25rem;
+  margin-left: 3rem; }
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 30%; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--grey-light-1);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    margin: -3.5rem;
+    transition: all .3s; }
+    .search__input:focus {
+      background-color: var(--grey-light-1);
+      outline: none;
+      width: 100%; }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100; }
+  .search__button {
+    border: none;
+    background-color: var(--grey-light-1); }
+    .search__button:focus {
+      background-color: var(--grey-light-1);
+      outline: none; }
+    .search__button:active {
+      transform: translateX(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem; }
+
+.user {
+  display: flex; }
+  .user__icons {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user__avtar__img {
+    height: 3.75rem;
+    border-radius: 50%; }
