@@ -26,9 +26,9 @@ body {
   background-color: var(--pink-light); }
 
 .main_container {
-  margin: none;
+  margin: 2rem auto;
   min-height: 100rem;
-  max-width: 1000rem;
+  max-width: 120rem;
   background-color: var(--grey-light-1); }
 
 .header {
