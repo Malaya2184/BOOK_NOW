@@ -26,9 +26,9 @@ body {
   background-color: var(--pink-light); }
 
 .main_container {
-  margin: 2rem auto;
+  margin: auto;
   min-height: 100rem;
-  max-width: 120rem;
+  max-width: 1000rem;
   background-color: var(--grey-light-1); }
 
 .header {
@@ -76,6 +76,8 @@ body {
       width: 100%; }
     .search__input::-webkit-input-placeholder {
       font-weight: 100; }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100; }
   .search__button {
     border: none;
     background-color: var(--grey-light-1); }
@@ -89,10 +91,42 @@ body {
     width: 2rem; }
 
 .user {
-  display: flex; }
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
+  .user > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%; }
+  .user > *:hover {
+    background-color: var(--grey-light-1);
+    height: 100%; }
+  .user__icons__container {
+    display: flex;
+    align-items: center;
+    position: relative; }
   .user__icons {
     height: 2.25rem;
-    width: 2.25rem; }
+    width: 2.25rem;
+    fill: var(--grey-dark-1); }
+  .user__icon__notfy {
+    font-size: 1rem;
+    background-color: var(--pink-light);
+    color: white;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem; }
+  .user__avtar {
+    display: flex;
+    align-items: center; }
   .user__avtar__img {
     height: 3.75rem;
     border-radius: 50%; }
+  .user__avtar__name {
+    margin-left: 1rem; }
