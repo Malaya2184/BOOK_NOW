@@ -1,5 +1,5 @@
 :root {
-  --pink-light: rgb(202, 63, 98);
+  --pink-light: rgb(245, 71, 115);
   --pink-dark: rgb(238, 16, 72);
   --grey-light-1: rgb(240, 238, 238);
   --grey-light-2: rgb(139, 138, 138);
@@ -26,9 +26,9 @@ body {
   background-color: var(--pink-light); }
 
 .main_container {
-  margin: 6rem auto;
+  margin: 0rem 0rem;
   min-height: 100rem;
-  max-width: 120rem;
+  max-width: 100%;
   background-color: var(--grey-light-1); }
 
 .header {
@@ -44,12 +44,44 @@ body {
   background-color: mediumaquamarine; }
 
 .menu_bar {
-  background-color: pink;
-  flex: 0 0 18%; }
+  background-color: var(--grey-dark-2);
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .menu_bar__extend {
+    font-size: 1.7rem;
+    list-style: none;
+    margin-top: 3.5rem; }
+    .menu_bar__extend__items {
+      display: flex;
+      flex-direction: column; }
+    .menu_bar__extend__link:link, .menu_bar__extend__link:visited {
+      display: flex;
+      align-items: center;
+      color: var(--grey-light-1);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      padding: 1.5rem 3rem; }
+      .menu_bar__extend__link:link:hover, .menu_bar__extend__link:visited:hover {
+        background-color: var(--pink-light);
+        height: 100%; }
+    .menu_bar__extend__icon {
+      height: 2rem;
+      width: 2rem;
+      margin-right: 2rem;
+      fill: var(--grey-light-1); }
+  .menu_bar__copyright {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2.5rem;
+    color: var(--grey-light-1); }
 
 .main_content {
   background-color: lightsalmon;
-  flex: 1; }
+  flex: 1;
+  height: 100rem; }
 
 .logo {
   height: 3.25rem;
