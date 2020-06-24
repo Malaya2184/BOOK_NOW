@@ -52,6 +52,26 @@ background-color: mediumaquamarine;
 {
 background-color: pink;
 flex: 0 0 18%;
+&__extend
+{
+
+    &__items
+    {
+
+    }
+    &__link
+    {
+
+    }
+    &__icon
+    {
+
+    }
+}
+&__copyright
+{
+    
+}
 }
 .main_content
 {
@@ -172,6 +192,6 @@ flex: 1;
     }
     &__avtar__name
     {
-        
+
     }
 }
