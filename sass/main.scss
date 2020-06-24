@@ -29,9 +29,9 @@ body{
 }
 .main_container
 {
-    margin:  auto;
+    margin: 6rem auto;
     min-height: 100rem;
-    max-width: 1000rem;
+    max-width: 120rem;
     background-color: var(--grey-light-1);
 }
 .header
@@ -168,9 +168,10 @@ flex: 1;
     {
         height: 3.75rem;
         border-radius: 50%;
+        margin-right: 1rem;
     }
     &__avtar__name
     {
-        margin-left: 1rem;
+        
     }
 }
