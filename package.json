@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/main.css -w",
+    "watch:sass1": "node-sass sass/flight.scss css/flight.css -w",
+    "watch:sass2": "node-sass sass/car-rental.scss css/car-rental.css -w",
+    "watch:sass3": "node-sass sass/tours.scss css/tours.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass"
+    "start": "npm-run-all --parallel devserver watch:sass watch:sass1 watch:sass2 watch:sass3"
   },
   "repository": {
     "type": "git",

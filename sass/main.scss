@@ -1,6 +1,6 @@
 :root
 {
-    --pink-light: rgb(245, 71, 115);
+    --pink-light: rgb(248, 83, 125);
     --pink-dark: rgb(238, 16, 72);
     --grey-light-1: rgb(240, 238, 238);
     --grey-light-2: rgb(139, 138, 138);
@@ -26,12 +26,13 @@ body{
     font-weight: normal;
     font-size: 1.5rem;
     background-color: var(--pink-light);
+    min-height: 100vh;
 }
 .main_container
 {
     margin: 0rem 0rem;
     min-height: 100rem;
-    max-width: 100%;
+    max-width: 1200rem;
     background-color: var(--grey-light-1);
 }
 .header
@@ -47,6 +48,7 @@ body{
 {
 display: flex;
 background-color: mediumaquamarine;
+height: 100rem;
 }
 .menu_bar
 {
@@ -77,6 +79,8 @@ justify-content: space-between;
         text-transform: uppercase;
         display: block;
         padding: 1.5rem 3rem;
+        transition-property: background-color;
+        transition-duration: .3s;
         &:hover
         {
         background-color: var(--pink-light);
@@ -93,19 +97,28 @@ justify-content: space-between;
 }
 &__copyright
 {
-font-size: 1.2rem;
-text-align: center;
-padding: 2.5rem;
-color: var(--grey-light-1);
-
+ font-size: 1.2rem;
+ text-align: center;
+ padding: 2.5rem;
+ color: var(--grey-light-1);
 }
 }
 .main_content
 {
-background-color: lightsalmon;
-flex: 1;
+background-color: rgb(248, 162, 105);
 height: 100rem;
+flex: 1;
+&__img-row
+{
+    display: flex;
+    &__items__img
+    {
+        width: 100%;
+        display: block;
+    }
 }
+}
+
 .logo
 {
     height: 3.25rem;
