@@ -29,7 +29,7 @@ body {
 .main_container {
   margin: 8rem auto;
   min-height: 100rem;
-  max-width: 120rem;
+  max-width: 140rem;
   background-color: var(--grey-light-1); }
 
 .header {
@@ -83,7 +83,6 @@ body {
     color: var(--grey-light-1); }
 
 .main_content {
-  height: 100rem;
   flex: 1; }
   .main_content__img-row {
     display: flex; }
@@ -126,10 +125,10 @@ body {
       display: inline-block;
       background-color: transparent;
       cursor: pointer;
-      transition: all .3s; }
+      transition: all .3s;
+      letter-spacing: 1px; }
       .hotel-overview__location__name:hover {
         color: var(--grey-dark-2);
-        border: none;
         font-size: 1.4rem;
         border-bottom: 1px solid var(--grey-dark-2); }
   .hotel-overview__rating {
@@ -148,6 +147,61 @@ body {
       font-size: 1rem;
       font-weight: 100;
       text-transform: uppercase; }
+
+.details {
+  display: flex;
+  font-size: 1.5rem;
+  padding: 4.5rem;
+  background-color: var(--grey-light-1);
+  border-bottom: 1px solid var(--grey-dark-1); }
+  .details__left {
+    background-color: white;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.06);
+    flex: 0 0 60%;
+    padding: 3rem;
+    margin-right: 4.5rem; }
+    .details__left__para:not(:last-child) {
+      margin-bottom: 2.2rem; }
+    .details__left__list {
+      border-bottom: 1px solid var(--grey-dark-1);
+      border-top: 1px solid var(--grey-dark-1);
+      margin: 3rem;
+      padding: 3rem 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap; }
+      .details__left__list__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 50%;
+        margin-bottom: .8rem; }
+        .details__left__list__items__icon {
+          padding: 0rem 0rem;
+          height: 2rem;
+          width: 2rem;
+          fill: var(--pink-light); }
+    .details__left__recomended {
+      font-size: 1.4rem;
+      color: var(--grey-dark-1);
+      display: flex;
+      align-items: center; }
+      .details__left__recomended__para {
+        margin-right: auto; }
+      .details__left__recomended__people__pic {
+        box-sizing: content-box;
+        border: 3px solid white;
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%; }
+        .details__left__recomended__people__pic:not(:last-child) {
+          margin-right: -1.5rem; }
+  .details__right {
+    background-color: white;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.06);
+    flex: 0 0 60%;
+    padding: 3rem;
+    flex: 1; }
 
 .logo {
   height: 3.25rem;
