@@ -1,7 +1,7 @@
 :root {
   --pink-light: rgb(248, 83, 125);
   --pink-dark: rgb(238, 16, 72);
-  --grey-light-1: rgb(240, 247, 240);
+  --grey-light-1: rgb(250, 253, 250);
   --grey-light-2: rgb(207, 205, 205);
   --grey-dark-1: rgb(121, 118, 119);
   --grey-dark-2: rgb(87, 83, 84); }
@@ -142,9 +142,11 @@ body {
     align-items: center;
     flex-direction: column; }
     .hotel-overview__rating__avg {
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      font-weight: 300; }
     .hotel-overview__rating__totl {
       font-size: 1rem;
+      font-weight: 100;
       text-transform: uppercase; }
 
 .logo {
