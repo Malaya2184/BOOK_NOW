@@ -27,9 +27,9 @@ body {
   min-height: 100vh; }
 
 .main_container {
-  margin: 8rem auto;
+  margin: 0rem 0rem;
   min-height: 100rem;
-  max-width: 140rem;
+  max-width: 1400rem;
   background-color: var(--grey-light-1); }
 
 .header {
@@ -191,8 +191,8 @@ body {
       .details__left__recomended__people__pic {
         box-sizing: content-box;
         border: 3px solid white;
-        height: 4.5rem;
-        width: 4.5rem;
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%; }
         .details__left__recomended__people__pic:not(:last-child) {
           margin-right: -1.5rem; }
