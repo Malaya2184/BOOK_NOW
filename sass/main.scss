@@ -168,6 +168,10 @@ flex: 1;
                 font-size: 1.4rem;
                 border-bottom: 1px solid var(--grey-dark-2);
             }
+            &:focus
+            {
+                outline: none;
+            }
         }
     }
     &__rating
@@ -272,6 +276,9 @@ flex: 1;
     &__right
     {
         flex: 1;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 .review
@@ -282,10 +289,13 @@ flex: 1;
         padding: 3rem;
         margin-bottom: 3.5rem;
         font-size: 1.4rem;
+        overflow: hidden;
     &__text
     {
         font-size: 1.4rem;
         margin-bottom: 2rem;
+        position: relative;
+        z-index: 1;
     }
     &__user
     {
@@ -326,12 +336,46 @@ flex: 1;
         content: "\201C";
         position: absolute;
         top: -3rem;
-        left: -2.7rem;
+        left: -1rem;
         font-size: 20rem;
-        color: var(--grey-light-2);
+        color: rgb(226, 226, 226);
         font-family: sans-serif;
+        z-index: 0;
     }
 }
+/////////////////////////////////////////// show all
+.show-all
+{
+    border: none;
+    color: var(--pink-light);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.show-all span {
+    margin-left: 3px;
+    -webkit-transition: margin-left .2s;
+    transition: margin-left .2s;
+  }
+  .show-all:hover {
+    color: var(--grey-dark-2);
+  }
+  
+  .show-all:hover span {
+    margin-left: 8px;
+  }
+  
+  .show-all:focus {
+    outline: none;
+    -webkit-animation: pulsate 1s infinite;
+            animation: pulsate 1s infinite;
+  }
+  ////////////////////////////////////////////////////////////
 .logo
 {
     height: 3.25rem;
