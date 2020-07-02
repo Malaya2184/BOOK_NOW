@@ -30,8 +30,7 @@ body{
 }
 .main_container
 {
-    margin: 8rem auto;
-    max-width: 140rem;
+    
     background-color: var(--grey-light-1);
 }
 .header
@@ -375,6 +374,45 @@ flex: 1;
     -webkit-animation: pulsate 1s infinite;
             animation: pulsate 1s infinite;
   }
+  ////////////////////////////////////////////////////////////
+.footer
+{
+    padding: 3.5rem 0;
+    text-align: center;
+    &__text
+    {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+    &__booknow
+    {
+        font-size: 1.7rem;
+        border: none;
+        font-weight: 300;
+        text-transform: uppercase;
+        border-radius: 100px;
+        background-image: linear-gradient(to right, var(--pink-light), rgb(182, 7, 36));
+        color: white;
+
+        &__span
+        {
+            display: inline-block;
+            padding: 2rem 7.5rem;
+        }
+        &:hover
+        {
+            background-image: linear-gradient(to right, rgb(182, 7, 36),var(--pink-light));
+            cursor: pointer;
+        }
+        &:focus
+        {
+            outline: none;
+        }
+    }
+        
+}
   ////////////////////////////////////////////////////////////
 .logo
 {

@@ -27,8 +27,6 @@ body {
   min-height: 100vh; }
 
 .main_container {
-  margin: 8rem auto;
-  max-width: 140rem;
   background-color: var(--grey-light-1); }
 
 .header {
@@ -275,6 +273,31 @@ body {
   outline: none;
   -webkit-animation: pulsate 1s infinite;
   animation: pulsate 1s infinite; }
+
+.footer {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .footer__text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+  .footer__booknow {
+    font-size: 1.7rem;
+    border: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, var(--pink-light), #b60724);
+    color: white; }
+    .footer__booknow__span {
+      display: inline-block;
+      padding: 2rem 7.5rem; }
+    .footer__booknow:hover {
+      background-image: linear-gradient(to right, #b60724, var(--pink-light));
+      cursor: pointer; }
+    .footer__booknow:focus {
+      outline: none; }
 
 .logo {
   height: 3.25rem;
